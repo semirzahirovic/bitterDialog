@@ -1,7 +1,6 @@
 package com.example.mylibrary;
 
 import android.content.Context;
-import com.pnikosis.materialishprogress.ProgressWheel;
 
 public class ProgressHelper {
     private ProgressWheel mProgressWheel;
