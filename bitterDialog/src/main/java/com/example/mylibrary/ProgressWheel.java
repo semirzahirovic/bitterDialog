@@ -17,15 +17,6 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
 
-/**
- * A Material style progress wheel, compatible up to 2.2.
- * Todd Davies' Progress Wheel https://github.com/Todd-Davies/ProgressWheel
- *
- * @author Nico Hormazábal
- *         <p/>
- *         Licensed under the Apache License 2.0 license see:
- *         http://www.apache.org/licenses/LICENSE-2.0
- */
 public class ProgressWheel extends View {
   private static final String TAG = ProgressWheel.class.getSimpleName();
   private final int barLength = 16;
@@ -153,11 +144,6 @@ public class ProgressWheel extends View {
     setMeasuredDimension(width, height);
   }
 
-  /**
-   * Use onSizeChanged instead of onAttachedToWindow to get the dimensions of the view,
-   * because this method is called after measuring the dimensions of MATCH_PARENT & WRAP_CONTENT.
-   * Use this dimensions to setup the bounds and paints.
-   */
   @Override protected void onSizeChanged(int w, int h, int oldw, int oldh) {
     super.onSizeChanged(w, h, oldw, oldh);
 
